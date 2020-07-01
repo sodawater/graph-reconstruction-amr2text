@@ -13,11 +13,11 @@ We use pretrained Glove vectors. Due to the limitation of filesize, we only uplo
 
 ## Train
 ```
-python train.py --enc_layers=6 --dec_layers=6 --num_heads=2 --num_units=512 --emb_dim=300  --train_dir=model/recon/ --use_copy=1 --batch_size=64 --dropout_rate=0.3 --gpu_device=0 --max_src_len=50 --max_tgt_len=50
+python train.py --enc_layers=6 --dec_layers=6 --num_heads=2 --num_units=512 --emb_dim=300  --train_dir=ckpt/ --use_copy=1 --batch_size=64 --dropout_rate=0.3 --gpu_device=0 --max_src_len=50 --max_tgt_len=50
 ```
 
 ## Test
 ```
-python infer.py --enc_layers=6 --dec_layers=6 --num_heads=2 --num_units=512 --emb_dim=300  --train_dir=model/recon/ --use_copy=1 --batch_size=64 --dropout_rate=0.3 --gpu_device=0 --max_src_len=50 --max_tgt_len=50
+python infer.py --enc_layers=6 --dec_layers=6 --num_heads=2 --num_units=512 --emb_dim=300  --train_dir=ckpt/ --use_copy=1 --batch_size=64 --dropout_rate=0.3 --gpu_device=0 --max_src_len=50 --max_tgt_len=50
 ```
 #The output file can be found in the  folder directory.
