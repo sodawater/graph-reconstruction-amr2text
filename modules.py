@@ -13,7 +13,6 @@ from tensorflow.python.ops import check_ops
 from tensorflow.python.ops import gen_nn_ops
 from tensorflow.python.ops import math_ops
 from tensorflow.python.ops import random_ops
-from linalg import LinearOperatorLowerTriangular
 from tensorflow.python.keras import backend as K
 import math
 
