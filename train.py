@@ -56,8 +56,8 @@ def add_arguments(parser):
 
     parser.add_argument("--max_train_data_size", type=int, default=0, help="Limit on the size of training data (0: no limit)")
 
-    parser.add_argument("--from_vocab_size", type=int, default=16550, help="source vocabulary size")
-    parser.add_argument("--to_vocab_size", type=int, default=16550, help="target vocabulary size")
+    parser.add_argument("--from_vocab_size", type=int, default=16500, help="source vocabulary size")
+    parser.add_argument("--to_vocab_size", type=int, default=16500, help="target vocabulary size")
     parser.add_argument("--edge_vocab_size", type=int, default=150, help="edge label vocabulary size")
     parser.add_argument("--enc_layers", type=int, default=10, help="Number of layers in the encoder")
     parser.add_argument("--dec_layers", type=int, default=4, help="Number of layers in the decoder")
